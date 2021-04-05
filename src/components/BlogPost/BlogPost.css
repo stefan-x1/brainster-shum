@@ -1,0 +1,76 @@
+.BlogPost {
+  width: calc(33%);
+  margin: 0 12.5px;
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.blog-post {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 242px;
+}
+
+.blog-post .author {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.blog-post .author .author-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 2px solid white;
+  margin-right: 10px;
+}
+
+.blog-post .author .author-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.blog-post .author .author-info small {
+  font-size: 10px;
+}
+
+.blog-post .author .author-info p {
+  margin: 0;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.blog-post .content .see-more {
+  opacity: 0;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+.blog-post .content .blogpost-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.blog-post .content .see-more span {
+  transition: all 0.3s ease-in-out;
+}
+
+.BlogPost:hover > .blog-post .content .see-more {
+  opacity: 1;
+  margin-top: 1.5rem;
+}
+
+.BlogPost:hover > .blog-post .content .see-more span {
+  margin-left: 1rem;
+}
+
+@media (max-width: 430px) {
+  .BlogPost {
+    width: 75%;
+    margin: 20px auto;
+  }
+}

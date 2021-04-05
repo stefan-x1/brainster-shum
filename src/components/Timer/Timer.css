@@ -1,0 +1,118 @@
+.Timer {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  right: 97px;
+  top: 59px;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  z-index: -1;
+}
+
+.Timer .timer-icons,
+.Timer .timer-settings {
+  background-color: #f9d04a;
+  padding: 17px 24px;
+}
+
+.Timer .timer-icons {
+  display: flex;
+  align-items: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.Timer .clock-icon {
+  width: 24px;
+  margin-right: 32px;
+}
+
+.Timer .times-icon:hover {
+  cursor: pointer;
+}
+
+.Timer .timer-settings {
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.Timer .timer-settings p {
+  text-transform: uppercase;
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+.Timer .input-group {
+  background-color: #fff;
+  display: flex;
+  width: 267px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.6rem;
+  margin-bottom: 20px;
+}
+
+.Timer .input-group .clock-icon {
+  margin-right: 0;
+}
+
+.Timer .input-group .inputs {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.Timer .input-group input {
+  border: 0;
+  width: 30px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.Timer .input-group input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.Timer .input-group input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.Timer .actions input {
+  margin-right: 8px;
+}
+
+.Timer .btn-timer {
+  background-color: #029fe3;
+  border: 2px solid rgba(0, 83, 118, 0.54);
+  border-radius: 10px;
+  padding: 12px 27px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  margin-top: 25px;
+  font-family: sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+@media (max-width: 770px) {
+  .Timer {
+    right: 30px;
+  }
+}
+
+@media (max-width: 430px) {
+  .Timer {
+    width: 100vw;
+    top: 20px;
+    left: 0;
+  }
+
+  .Timer .timer-settings {
+    width: 100%;
+  }
+}

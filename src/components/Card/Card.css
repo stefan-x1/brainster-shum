@@ -1,0 +1,38 @@
+.Card {
+  margin: 0 12.5px;
+}
+
+.Card a {
+  text-decoration: none;
+}
+
+.Card img {
+  display: block;
+  width: 100%;
+}
+
+.Card .card-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 16px 0;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.Card:hover .card-title {
+  color: #f9d04a;
+}
+
+.Card .card-description {
+  font-weight: 300;
+  line-height: 19.66px;
+  margin: 0;
+  color: white;
+}
+
+@media (max-width: 430px) {
+  .Card {
+    width: 80%;
+    margin: 20px auto;
+  }
+}

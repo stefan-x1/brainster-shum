@@ -1,0 +1,12 @@
+.AboutUs {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.AboutUs .brainster-logo {
+  margin-bottom: 30px;
+}
+
+.AboutUs .brainster-logo img {
+  width: 109px;
+}

@@ -1,0 +1,38 @@
+.SubSound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SubSound img {
+  filter: invert(100%) sepia(11%) saturate(2368%) hue-rotate(150deg) brightness(123%) contrast(111%);
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+@media (max-width: 770px) {
+  .SubSound {
+    margin-bottom: 3rem;
+    width: 26%;
+  }
+  
+  .SubSound img {
+    width: 34px;
+  }
+}
+
+@media (max-width: 430px) {
+  .SubSound {
+    width: 80%;
+  }
+
+  .SubSound input[type='range'].small {
+    width: 235px;
+  }
+
+  .SubSound img {
+    width: 35px;
+    height: 35px;
+  }
+}

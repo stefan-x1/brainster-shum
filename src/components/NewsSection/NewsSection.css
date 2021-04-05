@@ -1,0 +1,42 @@
+.NewsSection {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 113px;
+}
+
+.NewsSection .section-title,
+.NewsSection .section-description,
+.NewsSection .section-button {
+  text-align: center;
+}
+
+.NewsSection .section-title {
+  font-size: 48px;
+  font-weight: 300;
+}
+
+.NewsSection .section-description {
+  font-size: 24px;
+  line-height: 29.5px;
+  font-weight: 300;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.NewsSection .section-button {
+  margin-top: 50px;
+}
+
+@media (max-width: 430px) {
+  .NewsSection .section-title {
+    font-weight: 700;
+    font-size: 36px;
+  }
+
+  .NewsSection .section-description {
+    font-size: 18px;
+    width: 80%;
+  }
+}
